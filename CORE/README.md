@@ -298,5 +298,4 @@ Contributions are welcome! Please follow these steps:
 - User authentication and authorization
 
 ---
-
 *Developed by Amir Argani*
