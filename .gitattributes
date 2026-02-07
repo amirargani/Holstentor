@@ -46,13 +46,13 @@ MVC4.7/Restaurant/wwwroot/dist/** linguist-vendored
 MVC4.7/Restaurant/wwwroot/assets/vendor/** linguist-vendored
 
 # 2. Force show your personal JavaScript and CSS (even if minified)
-CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored -linguist-generated
-CORE/Holstentor/wwwroot/dist/css/** -linguist-vendored -linguist-generated
-MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-vendored -linguist-generated
-MVC4.7/Restaurant/wwwroot/dist/css/** -linguist-vendored -linguist-generated
+CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored -linguist-generated linguist-detectable linguist-language=JavaScript
+CORE/Holstentor/wwwroot/dist/css/** -linguist-vendored -linguist-generated linguist-detectable linguist-language=CSS
+MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-vendored -linguist-generated linguist-detectable linguist-language=JavaScript
+MVC4.7/Restaurant/wwwroot/dist/css/** -linguist-vendored -linguist-generated linguist-detectable linguist-language=CSS
 
 # 3. Force show all C# and CSHTML files
-CORE/Holstentor/**/*.cs -linguist-vendored -linguist-generated linguist-detectable
+CORE/Holstentor/**/*.cs -linguist-vendored -linguist-generated linguist-detectable linguist-language=C#
 CORE/Holstentor/**/*.cshtml -linguist-vendored -linguist-generated linguist-detectable linguist-language=HTML
-MVC4.7/Restaurant/**/*.cs -linguist-vendored -linguist-generated linguist-detectable
+MVC4.7/Restaurant/**/*.cs -linguist-vendored -linguist-generated linguist-detectable linguist-language=C#
 MVC4.7/Restaurant/**/*.cshtml -linguist-vendored -linguist-generated linguist-detectable linguist-language=HTML
