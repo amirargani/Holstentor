@@ -1,0 +1,36 @@
+# Handle line endings automatically for files detected as text
+# and leave binary files untouched.
+* text=auto
+
+# Standard C# source files
+*.cs text diff=csharp
+*.cshtml text diff=html
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.config text eol=crlf
+*.resx text eol=crlf
+
+# Web files
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+
+# Image files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Font files
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Documents
+*.pdf binary
+*.docx binary
+*.xlsx binary
