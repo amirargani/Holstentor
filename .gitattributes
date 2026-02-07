@@ -34,3 +34,11 @@
 *.pdf binary
 *.docx binary
 *.xlsx binary
+
+# Linguist Overrides (GitHub Language Statistics)
+# Mark third-party libraries and calculated assets as vendored
+CORE/Holstentor/wwwroot/lib/** linguist-vendored
+CORE/Holstentor/wwwroot/dist/** linguist-vendored
+MVC4.7/Restaurant/wwwroot/lib/** linguist-vendored
+MVC4.7/Restaurant/wwwroot/dist/** linguist-vendored
+MVC4.7/Restaurant/Scripts/** linguist-vendored
