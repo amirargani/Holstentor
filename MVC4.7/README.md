@@ -308,5 +308,4 @@ Contributions are welcome! Please follow these steps:
 - All open-source libraries used
 
 ---
-
 *Developed by Amir Argani*
