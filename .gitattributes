@@ -39,6 +39,18 @@
 # Mark third-party libraries and calculated assets as vendored
 CORE/Holstentor/wwwroot/lib/** linguist-vendored
 CORE/Holstentor/wwwroot/dist/** linguist-vendored
+CORE/Holstentor/wwwroot/assets/vendor/** linguist-vendored
+MVC4.7/Restaurant/Scripts/** linguist-vendored
 MVC4.7/Restaurant/wwwroot/lib/** linguist-vendored
 MVC4.7/Restaurant/wwwroot/dist/** linguist-vendored
-MVC4.7/Restaurant/Scripts/** linguist-vendored
+MVC4.7/Restaurant/wwwroot/assets/vendor/** linguist-vendored
+
+# Show JavaScript by un-vendoring/un-generating all files in JS dist folders
+CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored
+CORE/Holstentor/wwwroot/dist/js/** -linguist-generated
+MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-vendored
+MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-generated
+
+# Hide backend/template files to emphasize the JS/CSS frontend
+*.cs linguist-vendored
+*.cshtml linguist-vendored
