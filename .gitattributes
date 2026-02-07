@@ -3,8 +3,8 @@
 * text=auto
 
 # Standard C# source files
-*.cs text diff=csharp
-*.cshtml text diff=html
+*.cs text diff=csharp linguist-detectable -linguist-vendored -linguist-generated
+*.cshtml text diff=html linguist-detectable -linguist-vendored -linguist-generated linguist-language=HTML
 *.sln text eol=crlf
 *.csproj text eol=crlf
 *.config text eol=crlf
@@ -47,10 +47,15 @@ MVC4.7/Restaurant/wwwroot/assets/vendor/** linguist-vendored
 
 # Show JavaScript by un-vendoring/un-generating all files in JS dist folders
 CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored
-CORE/Holstentor/wwwroot/dist/js/** -linguist-generated
-MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-vendored
 MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-generated
 
-# Hide backend/template files to emphasize the JS/CSS frontend
-*.cs linguist-vendored
-*.cshtml linguist-vendored
+
+# Show CSS by un-vendoring/un-generating all files in CSS dist folders
+CORE/Holstentor/wwwroot/dist/css/** -linguist-vendored
+MVC4.7/Restaurant/wwwroot/dist/css/** -linguist-generated
+
+# show all cs and cshtml files (recursive)
+CORE/Holstentor/**/*.cs -linguist-vendored -linguist-generated
+CORE/Holstentor/**/*.cshtml -linguist-vendored -linguist-generated linguist-language=HTML
+MVC4.7/Restaurant/**/*.cs -linguist-vendored -linguist-generated
+MVC4.7/Restaurant/**/*.cshtml -linguist-vendored -linguist-generated linguist-language=HTML
