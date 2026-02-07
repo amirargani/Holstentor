@@ -36,7 +36,7 @@
 *.xlsx binary
 
 # Linguist Overrides (GitHub Language Statistics)
-# Mark third-party libraries and calculated assets as vendored
+# 1. Mark folders as third-party (vendored)
 CORE/Holstentor/wwwroot/lib/** linguist-vendored
 CORE/Holstentor/wwwroot/dist/** linguist-vendored
 CORE/Holstentor/wwwroot/assets/vendor/** linguist-vendored
@@ -45,17 +45,14 @@ MVC4.7/Restaurant/wwwroot/lib/** linguist-vendored
 MVC4.7/Restaurant/wwwroot/dist/** linguist-vendored
 MVC4.7/Restaurant/wwwroot/assets/vendor/** linguist-vendored
 
-# Show JavaScript by un-vendoring/un-generating all files in JS dist folders
-CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored
-MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-generated
+# 2. Force show your personal JavaScript and CSS (even if minified)
+CORE/Holstentor/wwwroot/dist/js/** -linguist-vendored -linguist-generated
+CORE/Holstentor/wwwroot/dist/css/** -linguist-vendored -linguist-generated
+MVC4.7/Restaurant/wwwroot/dist/js/** -linguist-vendored -linguist-generated
+MVC4.7/Restaurant/wwwroot/dist/css/** -linguist-vendored -linguist-generated
 
-
-# Show CSS by un-vendoring/un-generating all files in CSS dist folders
-CORE/Holstentor/wwwroot/dist/css/** -linguist-vendored
-MVC4.7/Restaurant/wwwroot/dist/css/** -linguist-generated
-
-# show all cs and cshtml files (recursive)
-CORE/Holstentor/**/*.cs -linguist-vendored -linguist-generated
-CORE/Holstentor/**/*.cshtml -linguist-vendored -linguist-generated linguist-language=HTML
-MVC4.7/Restaurant/**/*.cs -linguist-vendored -linguist-generated
-MVC4.7/Restaurant/**/*.cshtml -linguist-vendored -linguist-generated linguist-language=HTML
+# 3. Force show all C# and CSHTML files
+CORE/Holstentor/**/*.cs -linguist-vendored -linguist-generated linguist-detectable
+CORE/Holstentor/**/*.cshtml -linguist-vendored -linguist-generated linguist-detectable linguist-language=HTML
+MVC4.7/Restaurant/**/*.cs -linguist-vendored -linguist-generated linguist-detectable
+MVC4.7/Restaurant/**/*.cshtml -linguist-vendored -linguist-generated linguist-detectable linguist-language=HTML
